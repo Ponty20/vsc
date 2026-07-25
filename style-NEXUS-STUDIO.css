@@ -800,6 +800,66 @@ h2 {
   line-height: 1.6;
 }
 
+/* BANNER SERVICIOS */
+#banner-servicios {
+  padding: 60px 0;
+}
+.banner-servicios-card {
+  background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
+  border-radius: 24px;
+  padding: 56px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.banner-servicios-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 85% 20%, rgba(255,255,255,0.12), transparent 55%);
+  pointer-events: none;
+}
+.banner-servicios-content {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+.banner-servicios-content h2 {
+  margin: 8px 0 16px;
+}
+.banner-servicios-content p {
+  color: rgba(255,255,255,0.85);
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+.banner-servicios-actions {
+  display: flex;
+  gap: 16px;
+}
+.banner-servicios-tags {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 40px;
+}
+.banner-servicios-tags span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255,255,255,0.12);
+  border: 0.5px solid rgba(255,255,255,0.25);
+  border-radius: 100px;
+  padding: 8px 16px;
+}
+@media (max-width: 600px) {
+  .banner-servicios-card {
+    padding: 40px 24px;
+  }
+}
+
 /* AUTOR */
 #autor {
   padding: 100px 0;
