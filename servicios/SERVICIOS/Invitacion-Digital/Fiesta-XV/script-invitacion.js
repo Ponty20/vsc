@@ -82,7 +82,7 @@ rsvpForm.addEventListener("submit", (e)=>{
   if(respuestaSeleccionada === "si"){
     texto = `Hola! Confirmo mi asistencia a ${NOMBRE_EVENTO} 🎉\n\n` +
             `Nombre: ${nombre}\n` +
-            `Número de acompañantes (incluyéndome): ${acompanantes}`;
+            `Número de pases: ${acompanantes}`;
   } else {
     texto = `Hola! Lamentablemente no podré asistir a ${NOMBRE_EVENTO}.\n\n` +
             `Nombre: ${nombre}`;
