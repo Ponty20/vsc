@@ -1664,11 +1664,11 @@ h2 {
   min-width: 220px;
 }
 
-.wapp-btn {
+/* Estilos base compartidos para que mantengan la misma forma y estructura */
+.contact-btn {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  background: #25d366;
   color: #fff;
   padding: 14px 28px;
   border-radius: 100px;
@@ -1676,9 +1676,14 @@ h2 {
   font-weight: 700;
   text-decoration: none;
   transition: all 0.2s;
-  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.25);
   width: 100%;
   justify-content: center;
+}
+
+/* Estilo exclusivo para WhatsApp (Verde) */
+.wapp-btn {
+  background: #25d366;
+  box-shadow: 0 8px 32px rgba(37, 211, 102, 0.25);
 }
 
 .wapp-btn:hover {
@@ -1687,7 +1692,19 @@ h2 {
   background: #20ba5a;
 }
 
-.wapp-icon {
+/* Estilo exclusivo para Instagram (Degradado o color de la marca) */
+.ig-btn {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  box-shadow: 0 8px 32px rgba(220, 39, 67, 0.25);
+}
+
+.ig-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 48px rgba(220, 39, 67, 0.35);
+  filter: brightness(1.1);
+}
+
+.btn-icon {
   font-size: 20px;
 }
 
