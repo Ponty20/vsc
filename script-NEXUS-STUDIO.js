@@ -62,7 +62,7 @@ if (contactForm) {
     const proyecto = document.getElementById("proyecto").value;
 
     const msg = encodeURIComponent(
-      `Hola Nexus Studio, quiero mi demo gratis 🚀\n\n` +
+      `Hola Nexus Studio, quiero cotizar un proyecto 🚀\n\n` +
         `Nombre: ${nombre}\n` +
         `Negocio: ${negocio}\n` +
         `WhatsApp: ${whatsapp}\n` +
@@ -81,9 +81,9 @@ if (contactForm) {
 const ASSIST_CONFIG = {
   businessName: "Nexus Studio",
   whatsapp: "526143771797",
-  greeting: "¡Hola! 👋 Soy el asistente de Nexus Studio. Puedo ayudarte con precios, servicios, el proceso de trabajo o cómo pedir tu demo gratis. ¿Qué necesitas?",
+  greeting: "¡Hola! 👋 Soy el asistente de Nexus Studio. Puedo ayudarte con precios, servicios o el proceso de trabajo. ¿Qué necesitas?",
   fallback: "No tengo esa respuesta a la mano, pero Angel te contesta directo por WhatsApp:",
-  quickReplies: ["Precios", "Proceso", "Demo gratis"],
+  quickReplies: ["Precios", "Proceso", "Portafolio"],
 
   // Cada servicio tiene su propia respuesta a detalle.
   services: [
@@ -138,11 +138,11 @@ const ASSIST_CONFIG = {
     },
     {
       keywords: ["proceso", "cómo funciona", "como funciona", "cómo trabajan", "como trabajan"],
-      response: "El proceso es simple: 1) me escribes, 2) te mando una demo gratis, 3) desarrollamos juntos, 4) publicamos tu proyecto. Sin pagar nada hasta que veas la demo."
+      response: "El proceso es simple: 1) me escribes, 2) te mando una cotización, 3) desarrollamos juntos, 4) publicamos tu proyecto."
     },
     {
-      keywords: ["demo", "gratis", "prueba"],
-      response: "La demo es completamente gratuita y sin compromiso. Cuéntame de tu negocio o proyecto por WhatsApp y en menos de 24 horas te mando una vista previa."
+      keywords: ["portafolio", "ejemplos", "demo", "prueba"],
+      response: "Puedes ver ejemplos reales de mi trabajo en la sección de Portafolio de la página. Si te gusta lo que ves, escríbeme por WhatsApp y platicamos tu proyecto."
     },
     {
       keywords: ["ubicación", "ubicacion", "dónde", "donde", "chihuahua"],

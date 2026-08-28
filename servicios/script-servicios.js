@@ -61,7 +61,7 @@ contactForm.addEventListener("submit", (e) => {
     const servicio = document.getElementById("servicio").value;
 
     const msg = encodeURIComponent(
-    `Hola Nexus Studio, quiero mi demo gratis 🚀\n\n` +
+    `Hola Nexus Studio, quiero cotizar un proyecto 🚀\n\n` +
         `Nombre: ${nombre}\n` +
         `Evento o negocio: ${evento}\n` +
         `WhatsApp: ${whatsapp}\n` +
@@ -78,9 +78,9 @@ contactForm.addEventListener("submit", (e) => {
 const ASSIST_CONFIG = {
   businessName: "Nexus Studio",
   whatsapp: "526143771797",
-  greeting: "¡Hola! 👋 Soy el asistente de Nexus Studio. Puedo ayudarte con precios, servicios, tiempos de entrega o cómo pedir tu demo gratis. ¿Qué necesitas?",
+  greeting: "¡Hola! 👋 Soy el asistente de Nexus Studio. Puedo ayudarte con precios, servicios o tiempos de entrega. ¿Qué necesitas?",
   fallback: "No tengo esa respuesta a la mano, pero Angel te contesta directo por WhatsApp:",
-  quickReplies: ["Precios", "Entrega", "Demo gratis"],
+  quickReplies: ["Precios", "Entrega", "Portafolio"],
 
   // Cada servicio tiene su propia respuesta a detalle.
   services: [
@@ -132,8 +132,8 @@ const ASSIST_CONFIG = {
       response: "Los tiempos de entrega varían por servicio: desde 1–2 días (Tarjeta Digital) hasta 7–10 días (Catálogo Digital). Escribe \"servicios\" para ver el detalle de cada uno."
     },
     {
-      keywords: ["demo", "gratis", "prueba"],
-      response: "La demo es completamente gratuita y sin compromiso. Cuéntame de tu evento o negocio por WhatsApp y en menos de 24 horas te mando una vista previa."
+      keywords: ["portafolio", "ejemplos", "demo", "prueba"],
+      response: "Puedes ver ejemplos reales de mi trabajo en la sección de arriba de la página. Si te gusta lo que ves, escríbeme por WhatsApp y platicamos tu proyecto."
     },
     {
       keywords: ["adelanto", "anticipo", "por adelantado", "50%"],
